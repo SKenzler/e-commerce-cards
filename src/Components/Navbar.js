@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className='navbar'>
             <div className='nav-brand'>
                 <HiOutlineShoppingBag size={30} />
-                <h1 className='brand-text'>Shopping Mall</h1>
+                <div className='brand-text'>Shopping Mall</div>
             </div>
             <div className='nav-link'>
                 <ul>
@@ -14,12 +14,11 @@ const Navbar = () => {
                     <li>about</li>
                     <li>shop</li>
                 </ul>
-
             </div>
 
         </div>
 
-    );
+    )
 }
 
 export default Navbar;
