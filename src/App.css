@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
 
 :root {
   --primary-colour: #0a0a0c;
   --secondary-color: #fff;
   --accent-color: #ff06fb;
-  --font-family: 'Roboto', sans-serif;
+  --font-family: 'Poppins', sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: var(--font-family);
-  min-height: 100vh;
+  font-family: var(--font-family);
 }
 
 .navbar {
@@ -37,10 +36,15 @@
   color: var(--secondary-color);
   font-size: 1.2rem;
   font-weight: 500;
-  padding-left: 15px;
+  text-transform: uppercase;
+  padding-left: 10px;
 }
 
-.nav-link > ul {
+.accent-text {
+  font-weight: 700;
+}
+
+.nav-link ul {
   display: flex;
   justify-content: flex-end;
   align-content: center;
@@ -48,8 +52,20 @@
   list-style: none;
 }
 
-.nav-link > ul, li {
-  padding: 10px;
+.nav-link li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.nav-link a {
+  color: var(--accent-color);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+
 }
 
 

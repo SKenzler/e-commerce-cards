@@ -4,25 +4,22 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className='navbar'>
+        <nav className='navbar'>
             <div className='nav-brand'>
-                <HiOutlineShoppingBag size={30} />
-                <div className='brand-text'>Shopping Mall</div>
+                <HiOutlineShoppingBag size={25} />
+                <div className='brand-text'><span className='accent-text'>Shopping</span> Mall</div>
             </div>
             <div className='nav-link'>
                 <ul>
                     <li>
-                        <Link to="/index" target="_blank">home</Link>
+                        <Link to="/">home</Link>
                     </li>
                     <li>
-                        <Link to="/index" target="_blank">about</Link>
-                    </li>
-                    <li>
-                        <Link to="/index" target="_blank"><HiOutlineShoppingCart size={30} /></Link>
+                        <Link to="/Card"><HiOutlineShoppingCart size={25} /></Link>
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
 
     )
 }
