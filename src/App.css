@@ -1,4 +1,10 @@
+/***** Imported Google font family Poppins *****/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
+
+/***** End Imported Google font *****/
+
+/***** Define variables *****/
 
 :root {
   --primary-colour: #0a0a0c;
@@ -7,12 +13,20 @@
   --font-family: 'Poppins', sans-serif;
 }
 
+/***** End Define variables *****/
+
+/***** Define global styles *****/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-family);
 }
+
+/***** End Define global styles *****/
+
+/***** Navbar styles *****/
 
 .navbar {
   display: flex;
@@ -66,6 +80,10 @@
   text-decoration: none;
 
 }
+
+/***** End Navbar styles *****/
+
+/***** Hero styles *****/
 
 .hero-section {
   display: flex;
@@ -144,3 +162,28 @@
 .hero-content a {
   text-decoration: none;
 }
+
+/***** End Hero styles *****/
+
+/***** Card styles *****/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+}
+
+.status-tag {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  text-align: center;
+  background: var(--primary-colour);
+  width: 6em;
+  padding: 8px;
+  margin: 20px;
+}
+
+/***** End Card styles *****/
+
+
