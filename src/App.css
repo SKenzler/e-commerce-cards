@@ -94,7 +94,7 @@
   min-height: 100vh;
 }
 
-.img-box {
+.hero-section .img-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,7 +170,8 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 20em;
+  width: 22em;
+  margin: 20px;
 }
 
 .status-tag {
@@ -182,6 +183,94 @@
   width: 6em;
   padding: 8px;
   margin: 20px;
+}
+
+.card .img-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 22em;
+  object-fit: cover;
+  background: #0a0a0c;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 6, 251, 0.1);
+  border-radius: 50px 50px 0 0;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.card-header {
+  color: var(--primary-colour);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 20px;
+}
+ .rating-icons {
+  display: flex;
+ }
+.card-subheading {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--primary-colour);
+  padding: 10px 10px 5px 10px;
+}
+
+.card-ruler {
+  background: var(--primary-colour);
+  text-align: center;
+  width: 100%;
+  height: 1px;
+  margin: 0 8px 0 8px;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: justify;
+  color: var(--primary-colour);
+  padding: 10px;
+}
+
+.card-price {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18em;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px;
+  margin: 10px 10px 10px 0;
+  background: var(--accent-color);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 1s ease;
+}
+
+.card-btn:hover {
+  opacity: 0.8;
 }
 
 /***** End Card styles *****/
