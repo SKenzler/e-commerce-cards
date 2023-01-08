@@ -3,8 +3,12 @@ import { HiStar, HiOutlineStar } from 'react-icons/hi';
 import shoe from '../images/nike-AJ.png';
 
 const starStyle = { color: '#ff06fb', fontSize: '1.8em'};
+let badgeText;
+let ratingIcons;
 
-const Card = ()  => {
+
+
+const Card = (props)  => { 
     return (  
         <div className='card'>
             <div className='status-tag'>In Stock</div>
@@ -15,7 +19,7 @@ const Card = ()  => {
 
             <div className='card-content'>
 
-                <h1 className='card-header'>Nike Zoom Blazer</h1>
+                <h1 className='card-header'>{props.header}</h1>
 
                 <div className='rating-icons'>
                     <HiStar style={starStyle} /> <HiStar style={starStyle} /> <HiStar style={starStyle} /> <HiStar style={starStyle} /> <HiOutlineStar style={starStyle} />
@@ -29,7 +33,7 @@ const Card = ()  => {
                 lor poligen koliga. Plahässade kal sud, eftersom nymäda, om demiaktiv., sotes. Ladeck nåras.
                 </p>
 
-                <h2 className='card-price'>$240</h2>
+                <h2 className='card-price'>$ {props.pirce}</h2>
 
                 <button type='submit' className='card-btn'>Add to cart</button>
             </div>

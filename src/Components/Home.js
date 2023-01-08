@@ -19,7 +19,7 @@ const Home = () => {
                     </Link>
             </div>
             <div className='img-box'>
-                <img src= {heroImage} className='hero-img' alt="A runner putting on shoes" />
+                <img src={heroImage} className='hero-img' alt="A runner putting on shoes" />
             </div>
             
         </section>
