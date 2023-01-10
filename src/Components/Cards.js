@@ -1,16 +1,16 @@
 import React from 'react';
 import Card from './Card';
-import data from './data';
-
+import data from '../data';
+console.log(data);
 const Cards = () => {
     const cards = data.map(item => {
         return (
           <Card 
                 key={item.id}
                 stockStats={item.stockStatus}
-                
+                image={item.image}
                 header={item.header}
-                desription={item.descrition}
+                description={item.description}
                 price={item.price}
           />
         )
