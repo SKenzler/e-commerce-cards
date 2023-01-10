@@ -2,6 +2,8 @@ import React from 'react';
 import { HiStar, HiOutlineStar } from 'react-icons/hi';
 
 const starStyle = { color: '#ff06fb', fontSize: '1.8em'};
+const fillStar = "<HiStar style={starStyle} />";
+const outlineStar = "<HiOutlineStar style={starStyle} />";
 
 const Card = (props)  => { 
     return (  
@@ -19,7 +21,12 @@ const Card = (props)  => {
                 <h1 className='card-header'>{props.header}</h1>
 
                 <div className='rating-icons'>
-                    <HiStar style={starStyle} /> <HiStar style={starStyle} /> <HiStar style={starStyle} /> <HiStar style={starStyle} /> <HiOutlineStar style={starStyle} />
+                    {(() => {
+                        switch ({props.rating}} {
+                            case 3: return 'fillStar outlineStar fillStar outlineStar outlineStar';
+                            case 2: return fillStar fillStar outlineStar outlineStar outlineStar;
+                        }
+                    })()}   
                 </div>
 
           

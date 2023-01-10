@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import data from '../data';
-console.log(data);
+
 const Cards = () => {
     const cards = data.map(item => {
         return (
@@ -10,6 +10,7 @@ const Cards = () => {
                 stockStats={item.stockStatus}
                 image={item.image}
                 header={item.header}
+                rating={item.rating}
                 description={item.description}
                 price={item.price}
           />
@@ -17,9 +18,9 @@ const Cards = () => {
       })
 
       return (
-        <>
+        <div className='card-container'>
           {cards}
-        </>
+        </div>
       )
 
 }

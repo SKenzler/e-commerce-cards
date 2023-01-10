@@ -281,4 +281,15 @@
 
 /***** End Card styles *****/
 
+/***** Cards styles *****/
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/***** End Cards styles *****/
+
 
