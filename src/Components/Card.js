@@ -5,12 +5,31 @@ const starStyle = { color: '#ff06fb', fontSize: '1.8em'};
 const fillStar = "<HiStar style={starStyle} />";
 const outlineStar = "<HiOutlineStar style={starStyle} />";
 
+const displayRating = (rating, fillIcon, outlineIcon) => {
+
+    switch (rating) {
+        case 1: return 'rating 1';
+        case 2: return 'rating 2';
+        case 3: return 'rating 3';
+        case 4: return 'rating 4';
+        case 5: return 'rating 5';
+        default: return 'Not Rated';
+    }
+}
+
+
+
+const displayStockStatus = (stockStatus) => {
+{stockStatus = 0  ? <div className='status-tag'>Out of stock</div> : <div className='status-tag'>Available</div>}
+}
+
 const Card = (props)  => { 
+   
     return (  
 
         <div className='card'>
-            
-            {props.statusStock === 0  ? <div className='status-tag'>Out of stock</div> : <div className='status-tag'>Available</div>}
+
+            {displayStockStatus(props.stockStatus)}  
 
             <div className='img-box'>
                 <img src={props.image} className='card-img' alt="Shoe for Sale" />
@@ -18,15 +37,12 @@ const Card = (props)  => {
 
             <div className='card-content'>
 
+                
+
                 <h1 className='card-header'>{props.header}</h1>
 
                 <div className='rating-icons'>
-                    {(() => {
-                        switch ({props.rating}} {
-                            case 3: return 'fillStar outlineStar fillStar outlineStar outlineStar';
-                            case 2: return fillStar fillStar outlineStar outlineStar outlineStar;
-                        }
-                    })()}   
+                       {displayRating(props.rating)}
                 </div>
 
           
