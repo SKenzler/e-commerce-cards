@@ -2,30 +2,29 @@ import React from 'react';
 import { HiStar, HiOutlineStar } from 'react-icons/hi';
 
 const starStyle = { color: '#ff06fb', fontSize: '1.8em'};
-const fillStar = "<HiStar style={starStyle} />";
-const outlineStar = "<HiOutlineStar style={starStyle} />";
+const fillStar = <HiStar style={starStyle} />;
+const outlineStar = <HiOutlineStar style={starStyle} />;
 
 const displayRating = (rating, fillIcon, outlineIcon) => {
 
     switch (rating) {
-        case 1: return 'rating 1';
-        case 2: return 'rating 2';
-        case 3: return 'rating 3';
-        case 4: return 'rating 4';
-        case 5: return 'rating 5';
+        case 1: return [fillIcon, outlineIcon, outlineIcon, outlineIcon, outlineIcon];
+        case 2: return [fillIcon, fillIcon, outlineIcon, outlineIcon, outlineIcon];
+        case 3: return [fillIcon, fillIcon, fillIcon, outlineIcon, outlineIcon];
+        case 4: return [fillIcon, fillIcon, fillIcon, fillIcon, outlineIcon];
+        case 5: return [fillIcon, fillIcon, fillIcon, fillIcon, fillIcon];
         default: return 'Not Rated';
     }
 }
 
-
-
 const displayStockStatus = (stockStatus) => {
-{stockStatus = 0  ? <div className='status-tag'>Out of stock</div> : <div className='status-tag'>Available</div>}
+    
+    return (stockStatus < 1 ? <div className='status-tag'>Out of stock</div> : <div className='status-tag'>Available</div>)
 }
 
-const Card = (props)  => { 
+const Card = (props)  => {
    
-    return (  
+    return (
 
         <div className='card'>
 
@@ -42,9 +41,8 @@ const Card = (props)  => {
                 <h1 className='card-header'>{props.header}</h1>
 
                 <div className='rating-icons'>
-                       {displayRating(props.rating)}
+                       {displayRating(props.rating, fillStar, outlineStar)}
                 </div>
-
           
                 <h3 className='card-subheading'>Desciption</h3>
                 <div className='card-ruler'></div>
@@ -57,7 +55,7 @@ const Card = (props)  => {
                 <button type='submit' className='card-btn'>Add to cart</button>
             </div>
         </div>
-    );
+    )
 }
 
 export default Card;
