@@ -21,7 +21,7 @@ const displayStockStatus = (stockStatus) => {
 
     let badgeText
     
-    if (stockStatus !== 0) {
+    if (stockStatus === 0) {
         badgeText = "Sold Out"
     }
 
@@ -38,7 +38,7 @@ const Card = (props)  => {
 
         <div className='card'>
 
-            {displayStockStatus(props.stockStatus)}  
+            {displayStockStatus(props.stockStats)}
 
             <div className='img-box'>
                 <img src={props.image} className='card-img' alt="Shoe for Sale" />
