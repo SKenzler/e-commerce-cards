@@ -18,8 +18,18 @@ const displayRating = (rating, fillIcon, outlineIcon) => {
 }
 
 const displayStockStatus = (stockStatus) => {
+
+    let badgeText
     
-    return (stockStatus < 1 ? <div className='status-tag'>Out of stock</div> : <div className='status-tag'>Available</div>)
+    if (stockStatus !== 0) {
+        badgeText = "Sold Out"
+    }
+
+    else {
+        badgeText = "Available"
+    }
+    
+    return (badgeText && <div className='status-tag'>{badgeText}</div>)   
 }
 
 const Card = (props)  => {
@@ -35,8 +45,6 @@ const Card = (props)  => {
             </div>
 
             <div className='card-content'>
-
-                
 
                 <h1 className='card-header'>{props.header}</h1>
 

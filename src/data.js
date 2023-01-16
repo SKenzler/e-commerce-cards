@@ -2,6 +2,7 @@ import imgOne from "./images/nike-air-max.png";
 import imgTwo from "./images/nike-air-jordan.png";
 import imgThree from "./images/nike-AJ.png";
 import imgFour from "./images/nike-blazer.png";
+import imgFive from "./images/nike-huarache.png";
 
 const data = [
     {
@@ -42,6 +43,16 @@ const data = [
         rating: 3,
         description: "Commodo reprehenderit ad deserunt occaecat ex.Culpa dolore esse elit enim aute in mollit exercitation.",
         price: 345
+    },
+
+    {
+        id: 5,
+        stockStatus: 0,
+        image: imgFive,
+        header: "Nike Huarache",
+        rating: 5,
+        description: "Commodo deserunt ea minim proident.Ad sint eiusmod sit qui.",
+        price: 422
     }
 ];
 
