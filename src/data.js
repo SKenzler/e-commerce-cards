@@ -3,6 +3,7 @@ import imgTwo from "./images/nike-air-jordan.png";
 import imgThree from "./images/nike-AJ.png";
 import imgFour from "./images/nike-blazer.png";
 import imgFive from "./images/nike-huarache.png";
+import imgSix from "./images/nike-lebron.png";
 
 const data = [
     {
@@ -53,6 +54,16 @@ const data = [
         rating: 5,
         description: "Commodo deserunt ea minim proident.Ad sint eiusmod sit qui.",
         price: 422
+    },
+
+    {
+        id: 6,
+        stockStatus: 122,
+        image: imgSix,
+        header: "Nike Lebron",
+        rating: 4,
+        description: "Laborum deserunt culpa ullamco velit aliquip labore nostrud.Ex anim eiusmod dolore laboris nostrud aute anim incididunt pariatur nostrud eu magna nostrud.",
+        price: 510
     }
 ];
 

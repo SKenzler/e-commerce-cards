@@ -14,7 +14,7 @@ const Home = () => {
                     exercitation voluptate est adipisicing duis duis minim commodo cillum in.
                     Aliquip dolor pariatur sit quis laborum. Excepteur deserunt mollit est reprehenderit
                     cupidatat ea deserunt. Proident aliquip adipisicing exercitation enim magna cupida.</p>
-                    <Link to='/Card'>
+                    <Link to='/Cards'>
                         <button type='button' className='btn-cart'><HiOutlineShoppingCart size={25} />&nbsp; Start Shopping</button>
                     </Link>
             </div>

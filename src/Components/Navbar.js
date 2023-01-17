@@ -15,7 +15,7 @@ const Navbar = () => {
                         <Link to="/">home</Link>
                     </li>
                     <li>
-                        <Link to="/Card"><HiOutlineShoppingCart size={24} /></Link>
+                        <Link to="/Cards"><HiOutlineShoppingCart size={24} /></Link>
                     </li>
                 </ul>
             </div>

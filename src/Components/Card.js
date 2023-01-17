@@ -38,7 +38,7 @@ const Card = (props)  => {
 
         <div className='card'>
 
-            {displayStockStatus(props.stockStats)}
+            {displayStockStatus(props.stockStatus)}
 
             <div className='img-box'>
                 <img src={props.image} className='card-img' alt="Shoe for Sale" />

@@ -7,7 +7,7 @@ const Cards = () => {
         return (
           <Card 
                 key={item.id}
-                stockStats={item.stockStatus}
+                stockStatus={item.stockStatus}
                 image={item.image}
                 header={item.header}
                 rating={item.rating}
