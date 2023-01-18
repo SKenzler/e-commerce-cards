@@ -52,7 +52,7 @@ const Card = (props)  => {
                        {displayRating(props.rating, fillStar, outlineStar)}
                 </div>
           
-                <h3 className='card-subheading'>Desciption</h3>
+                <h3 className='card-subheading'>Description</h3>
                 <div className='card-ruler'></div>
 
                 <p className='card-desc'>{props.description}
