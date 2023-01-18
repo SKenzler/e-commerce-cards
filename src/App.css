@@ -242,6 +242,7 @@
 .card-desc {
   font-size: 0.9rem;
   font-weight: 500;
+  height:8em;
   text-align: justify;
   color: var(--primary-colour);
   padding: 10px;
