@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/e-commerce-cards/static/css/main.cf2d4779.css",
+    "main.js": "/e-commerce-cards/static/js/main.49c77bdf.js",
+    "static/media/hero-shoe-image.jpg": "/e-commerce-cards/static/media/hero-shoe-image.4ea22753f3bed68ab081.jpg",
+    "static/media/nike-air-max.png": "/e-commerce-cards/static/media/nike-air-max.4d3dbfc0fd5a46c27350.png",
+    "static/media/nike-huarache.png": "/e-commerce-cards/static/media/nike-huarache.b5112c39b5f3552ae26f.png",
+    "static/media/nike-lebron.png": "/e-commerce-cards/static/media/nike-lebron.25e34b1f3f3a2e7bda18.png",
+    "static/media/nike-air-jordan.png": "/e-commerce-cards/static/media/nike-air-jordan.55e2e4826b621490920a.png",
+    "static/media/nike-blazer.png": "/e-commerce-cards/static/media/nike-blazer.fe8b68bc75b50d1d8892.png",
+    "static/media/nike-AJ.png": "/e-commerce-cards/static/media/nike-AJ.ba96aca53bfd892e88e3.png",
+    "index.html": "/e-commerce-cards/index.html",
+    "main.cf2d4779.css.map": "/e-commerce-cards/static/css/main.cf2d4779.css.map",
+    "main.49c77bdf.js.map": "/e-commerce-cards/static/js/main.49c77bdf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf2d4779.css",
+    "static/js/main.49c77bdf.js"
+  ]
+}
