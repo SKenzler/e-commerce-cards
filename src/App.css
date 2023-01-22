@@ -43,15 +43,17 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px;
+  padding: 1em;
 } 
 
 .brand-text {
   color: var(--secondary-color);
   font-size: 1.2rem;
   font-weight: 500;
+  line-height: 1.22;
   text-transform: uppercase;
-  padding-left: 10px;
+  padding: 0.8em 0;
+  margin: 1em;
 }
 
 .accent-text {
@@ -118,15 +120,16 @@
 .hero-content h3 {
   font-size: 1.6rem;
   font-weight: 700;
-  line-height: 0.4;
+  line-height: 1.2;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin: 20px 0;
   color: var(--primary-colour);
 }
 
 .hero-content h1 {
   font-size: 3rem;
   font-weight: 700;
+  line-height: 1;
   text-transform: uppercase;
   color: var(--accent-color);
 }
